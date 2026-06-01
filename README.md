@@ -10,8 +10,8 @@ than handed down as a black box.
 
 This repository is the research pipeline behind the paper:
 
-> M. M. Asghar and M. Helal, *ViralPredict: segment-level virality prediction
-> for short-form video* (ICaTAS 2026).
+> M. M. Asghar and M. Helal, *Structural Position Dominates Segment-Level
+> Virality Prediction in Short-Form Video* (ICaTAS 2026).
 
 It contains the full feature-extraction pipeline, the four model families
 compared in the paper, the evaluation and ablation code, the result files behind
@@ -182,11 +182,12 @@ exceed 3.0x the median. Train/validation/test splits are **by video** (70/15/15,
 ## Citation
 
 ```bibtex
-@inproceedings{asghar2026viralpredict,
-  title     = {ViralPredict: Segment-Level Virality Prediction for Short-Form Video},
+@inproceedings{asghar2026structural,
+  title     = {Structural Position Dominates Segment-Level Virality Prediction in Short-Form Video},
   author    = {Asghar, Muhammad Mobeen and Helal, Manal},
-  booktitle = {Proceedings of ICaTAS 2026},
-  year      = {2026}
+  booktitle = {Proceedings of the 11th International Conference on Advanced Technology and Applied Sciences (ICaTAS 2026)},
+  year      = {2026},
+  address   = {Kuala Lumpur, Malaysia}
 }
 ```
 (Update the title, venue and pages once the paper is finalised.)
