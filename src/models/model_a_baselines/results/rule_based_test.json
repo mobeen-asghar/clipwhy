@@ -1,0 +1,36 @@
+{
+  "split": "test",
+  "model": "rule_based",
+  "seed": null,
+  "n_segments": 57962,
+  "n_videos": 557,
+  "n_positives": 504,
+  "n_rank_eligible_videos": 297,
+  "precision_at_k": {
+    "3": 0.035914702581369244,
+    "5": 0.03367003367003367,
+    "10": 0.03198653198653199
+  },
+  "recall_at_k": {
+    "3": 0.06604938271604939,
+    "5": 0.10319865319865319,
+    "10": 0.19882154882154882
+  },
+  "ndcg_at_k": {
+    "3": 0.05527359650860684,
+    "5": 0.07120307481849626,
+    "10": 0.10491049790816538
+  },
+  "auc_roc": 0.5195392894299051,
+  "f1_at_0_5": 0.01815806662312214,
+  "notes": "weights={'hook_word_ratio': 0.2, 'energy_mean': 0.2, 'arousal_mean': 0.15, 'words_per_second': 0.15, 'arousal_arc_direction': 0.1, 'is_intro': 0.1, 'speaking_rate_audio': 0.1}",
+  "weights": {
+    "hook_word_ratio": 0.2,
+    "energy_mean": 0.2,
+    "arousal_mean": 0.15,
+    "words_per_second": 0.15,
+    "arousal_arc_direction": 0.1,
+    "is_intro": 0.1,
+    "speaking_rate_audio": 0.1
+  }
+}

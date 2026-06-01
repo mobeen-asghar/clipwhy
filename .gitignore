@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+*.key
+
+# Data and large artefacts (not distributed; see README "Data availability")
+data/
+*.csv
+*.wav
+*.mp4
+*.vtt
+*.npy
+*.pt
+*.pkl
+*.safetensors
+cookies.txt
+
+# Model checkpoints (regenerable)
+*_checkpoints/
+
+# OS
+.DS_Store

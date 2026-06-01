@@ -1,0 +1,45 @@
+# Feature extraction dependencies.
+#
+# INTENDED POD TEMPLATE:
+#   runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
+#
+# torch / torchvision / torchaudio come FROM the template; do NOT reinstall them.
+# setup_features_pod.sh installs the packages below via plain pip.
+
+# Core
+numpy>=1.26
+pandas>=2.2
+python-dotenv>=1.0
+requests>=2.31
+boto3>=1.34
+joblib>=1.3
+scikit-learn>=1.4
+tqdm>=4.66
+
+# Audio
+librosa>=0.10
+soundfile>=0.12
+praat-parselmouth>=0.4.4
+
+# Transformers (for Wav2Vec 2.0 emotion).
+# Pinned to 4.44.x: 5.x adds strict config validation that rejects the
+# audeering audio-only model (vocab_size=None). 4.44.2 loads cleanly.
+transformers>=4.41,<5.0
+
+# Vision
+open_clip_torch>=2.24
+opencv-python>=4.9
+Pillow>=10.0
+transnetv2-pytorch>=1.0.2
+
+# Face detection (ONNX runtime must match CUDA in template; CUDA 12.4 → onnxruntime-gpu 1.19+)
+insightface>=0.7
+onnxruntime-gpu>=1.19
+
+# YAMNet (PyTorch port from GitHub — setup script does `pip install git+...`):
+#   https://github.com/w-hc/torch_audioset
+
+# DOVER weights are downloaded by setup script; DOVER itself is a pip install
+# from GitHub (needs mmengine + mmcv pin, handled in setup).
+
+# Gillick laughter-detection is a git clone (not a pip package).

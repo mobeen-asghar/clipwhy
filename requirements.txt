@@ -1,0 +1,7 @@
+google-api-python-client==2.178.0
+python-dotenv==1.1.0
+pandas==2.2.3
+rapidfuzz==3.14.5
+yt-dlp>=2026.3.17
+openai-whisper==20240930
+requests>=2.31.0
